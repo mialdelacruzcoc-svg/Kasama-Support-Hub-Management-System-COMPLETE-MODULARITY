@@ -1,0 +1,12 @@
+/* Page-specific styles for setup-profile.php */
+
+body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+.setup-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+.setup-card h2 { color: #4a7c2c; margin-bottom: 10px; }
+.setup-card p { color: #666; font-size: 14px; margin-bottom: 30px; }
+.input-group { text-align: left; margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #333; }
+.input-group input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
+.btn-save { background: #4a7c2c; color: white; border: none; padding: 14px; width: 100%; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+.btn-save:hover { background: #3d6624; }
+.error { color: #d32f2f; font-size: 13px; margin-bottom: 15px; }

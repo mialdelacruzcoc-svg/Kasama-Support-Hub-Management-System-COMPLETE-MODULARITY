@@ -1,0 +1,94 @@
+/* Page-specific styles for verify-code.php */
+
+.verify-container {
+            max-width: 450px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+.verify-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+.verify-header h1 {
+            font-size: 24px;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+.verify-header p {
+            color: var(--medium-gray);
+            font-size: 14px;
+        }
+.email-display {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-top: 5px;
+        }
+/* OTP Input Styling */
+.otp-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+.otp-input {
+            width: 50px;
+            height: 60px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            border: 2px solid #ececec;
+            border-radius: 8px;
+            color: var(--primary-green);
+            transition: all 0.3s ease;
+        }
+.otp-input:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 4px rgba(74, 124, 44, 0.08);
+        }
+.resend-text {
+            text-align: center;
+            font-size: 13px;
+            color: var(--medium-gray);
+            margin-top: 20px;
+        }
+.resend-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+.resend-link.disabled {
+            color: #ccc;
+            cursor: not-allowed;
+            text-decoration: none;
+        }
+.btn-verify {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+.btn-verify:hover {
+            background: var(--dark-green);
+            transform: translateY(-2px);
+        }
+.alert {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
+.alert-error { background: #ffebee; color: #c62828; border: 1px solid #ef5350; }
+.alert-success { background: #e8f5e9; color: #2e7d32; border: 1px solid #66bb6a; }

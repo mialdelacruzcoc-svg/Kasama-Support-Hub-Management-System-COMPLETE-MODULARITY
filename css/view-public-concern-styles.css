@@ -1,0 +1,29 @@
+/* Page-specific styles for view-public-concern.php */
+
+.concern-container { max-width: 800px; margin: 0 auto; }
+.concern-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; overflow: hidden; }
+.concern-header { padding: 25px; border-bottom: 1px solid #f0f0f0; }
+.category-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+.concern-title { font-size: 22px; color: #333; margin: 0 0 15px; }
+.concern-meta { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+.meta-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #666; }
+.meta-avatar { width: 32px; height: 32px; border-radius: 50%; background: #4a7c2c; color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+.status-badge { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.status-pending { background: #fff3e0; color: #ef6c00; }
+.status-in-progress { background: #e3f2fd; color: #1565c0; }
+.status-resolved { background: #e8f5e9; color: #2e7d32; }
+.concern-body { padding: 25px; }
+.concern-description { line-height: 1.8; color: #555; white-space: pre-wrap; }
+/* Responses */
+.responses-section { padding: 25px; background: #f8f9fa; }
+.responses-title { margin: 0 0 20px; font-size: 18px; color: #333; }
+.response-item { background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; border-left: 4px solid #4a7c2c; }
+.response-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 10px; }
+.response-author { font-weight: 600; color: #2e7d32; display: flex; align-items: center; gap: 8px; }
+.response-time { font-size: 12px; color: #888; }
+.response-message { color: #555; line-height: 1.6; }
+.no-responses { text-align: center; padding: 30px; color: #888; background: white; border-radius: 8px; }
+/* Info Box */
+.privacy-notice { background: #fff3e0; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+.privacy-notice .icon { font-size: 24px; }
+.privacy-notice .text { font-size: 14px; color: #666; }

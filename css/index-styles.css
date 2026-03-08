@@ -1,0 +1,153 @@
+/* Page-specific styles for index.php */
+
+/* Custom styles for Registration Modal */
+.close-btn {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #666;
+        }
+.register-link-container {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+.btn-register-open {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+.reg-input-group {
+            margin-bottom: 15px;
+        }
+.reg-input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+.reg-input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+.btn-submit-reg {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+/* FIXED: Siguraduhon nga ma-click ang forgot password link */
+.forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #4a7c2c;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            z-index: 10;
+        }
+.forgot-password:hover {
+            text-decoration: underline;
+        }
+/* Password toggle eye icon */
+.password-wrapper {
+            position: relative;
+            width: 100%;
+        }
+.password-wrapper input {
+            padding-right: 45px;
+        }
+.toggle-password {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            color: #888;
+            font-size: 18px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+.toggle-password:hover {
+            color: #333;
+        }
+/* Math CAPTCHA */
+.captcha-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0 5px;
+            padding: 10px 12px;
+            background: #f8f9fa;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+        }
+.captcha-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 44px;
+            height: 40px;
+            background: white;
+            border: 1.5px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a4a72;
+            letter-spacing: 1px;
+            user-select: none;
+        }
+.captcha-op {
+            font-size: 18px;
+            font-weight: 600;
+            color: #555;
+            user-select: none;
+        }
+.captcha-answer {
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            border: 1.5px solid #d0d0d0;
+            border-radius: 6px;
+            outline: none;
+            color: #333;
+            transition: border-color 0.2s;
+        }
+.captcha-answer:focus {
+            border-color: #1a4a72;
+            box-shadow: 0 0 0 3px rgba(26, 74, 114, 0.08);
+        }
+.captcha-refresh {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #888;
+            padding: 4px;
+            margin-left: auto;
+            transition: color 0.2s, transform 0.3s;
+            display: flex;
+            align-items: center;
+        }
+.captcha-refresh:hover {
+            color: #1a4a72;
+            transform: rotate(180deg);
+        }

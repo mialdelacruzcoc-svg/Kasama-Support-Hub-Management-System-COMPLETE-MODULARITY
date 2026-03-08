@@ -1,0 +1,83 @@
+/* Page-specific styles for book-appointment.php */
+
+/* ==================== MOBILE RESPONSIVE FIX ==================== */
+@media screen and (max-width: 768px) {
+            /* Himoon nga one column ang layout imbes nga 2-columns */
+            .appointment-container {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 15px !important;
+            }
+
+            /* I-balhin ang Office Hours sidebar sa ubos para tibuok screen ang calendar */
+            .help-sidebar {
+                order: 2;
+                width: 100% !important;
+            }
+
+            .booking-section {
+                order: 1;
+                padding: 15px !important; /* Gamayan ang padding para sa gamay nga screen */
+            }
+
+            /* I-stack ang navigation buttons sa header */
+            .dashboard-header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px !important;
+                height: auto !important;
+            }
+
+            .header-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            /* I-adjust ang Calendar grid para dili maghuot ang mga numero */
+            .calendar {
+                gap: 5px !important;
+            }
+
+            .calendar-day {
+                padding: 4px !important;
+                font-size: 12px !important;
+            }
+
+            /* Padak-on ang Time Slots para sayon pisliton sa mobile */
+            .time-slots {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .time-slot {
+                padding: 15px !important;
+                font-size: 16px !important;
+            }
+
+            /* Buttons full width sa mobile */
+            .btn-submit, .btn-secondary {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+/* ==================== ORIGINAL STYLES ==================== */
+.appointment-container { display: grid; grid-template-columns: 2fr 1fr; gap: 25px; max-width: 1400px; }
+.booking-section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.calendar-nav { display: flex; gap: 10px; }
+.calendar-nav button { padding: 8px 16px; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer; transition: all 0.2s; color: #333; }
+.current-month { font-size: 20px; font-weight: 600; color: #333; }
+.calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 30px; }
+.calendar-day-header { text-align: center; font-size: 12px; font-weight: 600; color: #666; text-transform: uppercase; padding: 10px 0; }
+.calendar-day { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #e0e0e0; border-radius: 8px; cursor: pointer; transition: all 0.2s; padding: 8px; }
+.calendar-day.selected { background: #4a7c2c; color: white; border-color: #4a7c2c; }
+.calendar-day.past { opacity: 0.3; cursor: not-allowed; }
+.calendar-day.disabled { background: #f5f5f5; cursor: not-allowed; }
+.time-slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; margin-top: 15px; }
+.time-slot { padding: 12px; border: 1.5px solid #e0e0e0; border-radius: 8px; text-align: center; cursor: pointer; transition: all 0.2s; font-size: 14px; }
+.time-slot.selected { background: #4a7c2c; color: white; }
+.time-slot.blocked { background: #f5f5f5; color: #bbb; border-color: #e0e0e0; cursor: not-allowed; text-decoration: line-through; }
+.time-slot.booked { background: #fde8e8; color: #c0392b; border-color: #f5c6cb; cursor: not-allowed; }
+.slot-label { font-size: 10px; margin-top: 3px; display: block; }
+.booking-form { margin-top: 30px; padding-top: 30px; border-top: 2px solid #f0f0f0; }
+.selected-datetime { background: #e8f5e9; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; }
+.help-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
